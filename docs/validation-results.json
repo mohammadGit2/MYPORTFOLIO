@@ -1,0 +1,23 @@
+{
+  "results": [
+    "No horizontal overflow at 375×812; local images decoded.",
+    "No horizontal overflow at 390×844; local images decoded.",
+    "No horizontal overflow at 430×932; local images decoded.",
+    "No horizontal overflow at 768×1024; local images decoded.",
+    "No horizontal overflow at 1024×768; local images decoded.",
+    "No horizontal overflow at 1280×720; local images decoded.",
+    "No horizontal overflow at 1366×768; local images decoded.",
+    "No horizontal overflow at 1440×900; local images decoded.",
+    "No horizontal overflow at 1920×1080; local images decoded.",
+    "No horizontal overflow at 1024×600; local images decoded.",
+    "Project modal traps focus, closes on Escape, restores trigger focus and body scrolling.",
+    "Every project filter returns the expected projects.",
+    "All five simulations complete with five trace events; reset and agent switching cancel old execution; node inspection works.",
+    "Mobile menu focus containment, Escape, section focus, and desktop resize cleanup pass.",
+    "Clipboard success and denied-permission fallback work; contact uses real mailto links.",
+    "Sound preference persists; reduced-motion removes animation and smooth scrolling.",
+    "Blocked localStorage does not prevent rendering or sound preference changes.",
+    "No uncaught browser errors or local asset HTTP errors."
+  ],
+  "failures": []
+}
