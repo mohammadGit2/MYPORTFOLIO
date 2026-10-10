@@ -1,45 +1,19 @@
+import { useState } from 'react';
 import { LocalTime } from './LocalTime';
+import { SignalSculpture } from './SignalSculpture';
 export function Hero() {
-    return <section id="home" className="hero section" tabIndex={-1} aria-labelledby="hero-title">
-    <div className="hero-meta">
-    <span className="eyebrow">Syed Muhammad Bin Ali</span>
-    <LocalTime />
+  const [skip, setSkip] = useState(false);
+  return <section id="home" className={`astra-hero section ${skip ? 'intro-skipped' : ''}`} tabIndex={-1} aria-labelledby="hero-title">
+    <div className="astra-meta"><span className="eyebrow">Independent developer & creative technologist</span><LocalTime/></div>
+    <div className="astra-hero-grid">
+      <div className="astra-identity"><p className="eyebrow identity-kicker"><span className="status-dot"/> A practice in possibility</p>
+        <h1 id="hero-title"><span>Syed Muhammad</span><span className="name-main">Bin Ali<span className="copper-dot">.</span></span></h1>
+        <p className="hero-declaration">I turn complex ideas<br/>into <em>considered experiences.</em></p>
+        <p className="hero-description">Full-stack development. AI agents & automation.<br/>Useful technology, built with intention.</p>
+        <div className="hero-actions"><a href="#projects" className="astra-button">Explore my work <span>↗</span></a><a href="#showreel" className="reel-link"><span className="play-ring">▶</span>Play the film <small>00:21</small></a></div>
+      </div>
+      <div className="sculpture-frame"><div className="sculpture-meta eyebrow"><span>Fig. 01</span><span>Signal → Structure</span></div><SignalSculpture/><div className="sculpture-caption"><span>One idea.<br/>Many possibilities.</span><span className="eyebrow">A study in<br/>creative engineering</span></div></div>
     </div>
-    <div className="hero-composition">
-    <h1 id="hero-title">Interfaces.<br />
-    <span className="hero-second">Intelligence<span className="signal">.</span>
-    </span>
-    <span className="hero-third">In motion<span className="signal">↗</span>
-    </span>
-    </h1>
-    <div className="hero-note">
-    <span className="eyebrow">The idea is only the beginning.</span>
-    <p>I build full-stack products and AI workflows that connect people, interfaces, and the systems behind them.</p>
-    <a className="text-link" href="#projects">Explore selected work <span>↘</span>
-    </a>
-    </div>
-    <a href="#ai-agents" className="hero-proof" aria-label="Explore the interactive AI workflow lab">
-    <span className="eyebrow">From input to possibility</span>
-    <div className="signal-path" aria-hidden="true">
-    <span />
-    <i />
-    <span />
-    <i />
-    <span className="end-node">↗</span>
-    </div>
-    <div className="proof-labels">
-    <span>Intent</span>
-    <span>Logic</span>
-    <span>Action</span>
-    </div>
-    <span className="proof-footer">Anatomy of a workflow <span>↗</span>
-    </span>
-    </a>
-    </div>
-    <div className="hero-bottom">
-    <span>Full-stack development / AI agents / Automation</span>
-    <a href="#projects">Scroll to explore <span>↓</span>
-    </a>
-    </div>
-    </section>;
+    <div className="astra-bottom"><a href="#projects">Selected work, systems & experiments <span>↓</span></a><button onClick={()=>setSkip(true)} className="skip-intro">{skip ? 'Opening motion skipped' : 'Skip opening motion ↗'}</button><span className="eyebrow">Portfolio / 2026</span></div>
+  </section>;
 }

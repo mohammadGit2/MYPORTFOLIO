@@ -12,6 +12,7 @@ export const GITHUB = 'https://github.com/mohammadGit2';
 export interface Project {
  id: string; number: string; title: string; tagline: string; category: string;
  url: string; githubUrl: string; image?: string; imageSmall?: string; imageAlt?: string;
+ sourceUrl?: string; evidence?: string; contribution?: string; status?: string;
  stack: string[]; description: string; architecturalBreakdown: string[]; featured?: boolean;
 }
 export interface AgentNode { id: string; name: string; role: string; outputType: string; }
@@ -23,6 +24,10 @@ export interface AIAgentSystem {
 export const PROJECTS: Project[] = [
   {
     "id": "nextmarket-pk",
+    "sourceUrl": "https://github.com/mohammadGit2/syedstore",
+    "status": "Source reviewed",
+    "contribution": "Portfolio project covering storefront interaction, cart state, and conversational order handoff. Individual team responsibilities were not separately documented.",
+    "evidence": "The source defines the Next Market deployment URL, a quantity-aware local-storage cart, WhatsApp product-message generation, and an email-order route. These features were inspected in code; live checkout availability has not been verified.",
     "title": "NextMarket PK",
     "tagline": "Commerce, made conversational.",
     "category": "E-Commerce",
@@ -30,9 +35,10 @@ export const PROJECTS: Project[] = [
     "githubUrl": "https://github.com/mohammadGit2",
     "image": image0,
     "stack": [
-      "React",
+      "Next.js",
+      "TypeScript",
       "Tailwind CSS",
-      "Client state"
+      "Local storage"
     ],
     "description": "A utility-product storefront connecting product discovery, a persistent cart, and WhatsApp checkout.",
     "architecturalBreakdown": [
@@ -94,6 +100,10 @@ export const PROJECTS: Project[] = [
   },
   {
     "id": "bait-al-taareekh",
+    "sourceUrl": "https://github.com/mohammadGit2/historyLibrary",
+    "status": "MVP / source reviewed",
+    "contribution": "Historical digital-library portfolio project. Reviewed code covers archive navigation, search aliases, and a reader MVP; precise individual responsibilities are not documented.",
+    "evidence": "Repository inspection confirms Unicode-aware search, Urdu aliases, source-linked records, and reader display controls. PDF rendering, OCR search, and bookmarks remain placeholders in the reviewed reader. The relation to the retained live deployment has not been independently verified.",
     "title": "Bait Al Taareekh",
     "tagline": "A window into the past.",
     "category": "Full-Stack",
@@ -101,15 +111,15 @@ export const PROJECTS: Project[] = [
     "githubUrl": "https://github.com/mohammadGit2",
     "image": image3,
     "stack": [
-      "Web architecture",
-      "Tailwind CSS",
+      "Next.js",
+      "TypeScript",
       "Structured content"
     ],
-    "description": "A historical exploration portal bringing timelines, archives, and visual storytelling together.",
+    "description": "A historical-library MVP exploring source-linked archives, multilingual discovery, and a reader interface.",
     "architecturalBreakdown": [
-      "Chronological organization of historical content.",
-      "Readable article layouts and media galleries.",
-      "Timeline filtering and structured navigation."
+      "Unicode-aware search with English and Urdu aliases.",
+      "Source-linked book and topic records in a Next.js archive.",
+      "Reader navigation, display modes, and citation copying; PDF/OCR and bookmarks remain planned."
     ],
     "number": "04",
     "imageSmall": small3,

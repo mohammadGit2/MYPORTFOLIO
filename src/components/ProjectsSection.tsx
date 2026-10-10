@@ -42,5 +42,6 @@ export function ProjectsSection() {
         </div>
         <a className="text-link project-live" href={project.url} target="_blank" rel="noreferrer">Visit site ↗</a>
         </div>
+        <p className="project-proof"><span>↳</span> {project.status || "Portfolio project / supplied project notes"}</p>
         </article>)}</div>{selected && <ProjectModal project={selected} onClose={() => setSelected(null)}/>}</section>;
 }
