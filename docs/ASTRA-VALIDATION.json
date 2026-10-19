@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-10",
+  "base_commit": "834c9c92ee497f220d43f1fe93df8aeeecc13c32",
+  "typecheck": "passed",
+  "production_build": "passed",
+  "server_render": "passed",
+  "static_checks": {
+    "unique_ids": true,
+    "all_main_sections_present": true,
+    "internal_anchors_exist": true,
+    "six_original_projects": true,
+    "one_h1": true,
+    "film_is_opt_in_and_muted": true,
+    "film_captions_exist": true,
+    "standalone_resume_has_profile_and_contacts": true,
+    "local_dist_assets_exist": true,
+    "film_is_21_seconds_with_audio": true,
+    "mp4_under_2mb": true,
+    "reduced_motion_styles_present": true
+  },
+  "media": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "24/1"
+      },
+      {
+        "codec_name": "aac",
+        "channels": 2,
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "21.000000",
+      "size": "1228210"
+    }
+  },
+  "visual_review": "Six rendered film frames inspected; website browser screenshots unavailable.",
+  "browser_qa": "Not run: supported control-browser capability unavailable under managed Sites workflow.",
+  "live_links": "Preserved; external deployment reachability unverified.",
+  "resume_pdf": "Browser Print / Save as PDF implemented; print layout unverified in a browser."
+}

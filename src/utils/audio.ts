@@ -1,12 +1,8 @@
 class SoundFX {
     private ctx: AudioContext | null = null;
     private enabled = false;
-    constructor() {
-        try {
-            this.enabled = localStorage.getItem('syed_portfolio_sound_v2') === 'true';
-        }
-        catch { /* Storage is optional. */ }
-    }
+    // Audio is always off on a fresh page. An old preference never causes surprise sound.
+    constructor() {}
     isEnabled() { return this.enabled; }
     toggle() {
         this.enabled = !this.enabled;

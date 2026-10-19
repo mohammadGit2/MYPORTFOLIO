@@ -21,6 +21,8 @@ export function ProjectModal({ project, onClose }: {
     </div>
     <figure className="case-media">
     <ProjectMedia project={project} eager/>{project.image && <figcaption>Existing portfolio concept artwork; not a verified product screenshot.</figcaption>}</figure>
+    <div className="case-proof"><h3>{project.status || 'Supplied project notes'}</h3><p>{project.evidence || 'This description is preserved from the existing portfolio. Implementation and deployment have not been independently verified.'}</p>{project.sourceUrl && <a href={project.sourceUrl} target="_blank" rel="noreferrer">Inspect source repository ↗</a>}</div>
+    <div className="case-proof"><h3>Contribution & scope</h3><p>{project.contribution || 'Selected work included in my existing portfolio. Detailed ownership and individual responsibilities are not yet documented.'}</p></div>
     <div className="case-details">
     <div>
     <h3>Technical notes</h3>
