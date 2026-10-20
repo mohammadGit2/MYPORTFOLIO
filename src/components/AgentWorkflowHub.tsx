@@ -46,7 +46,7 @@ export default function AgentWorkflowHub() {
     return <>
     <div className="lab-heading">
     <div>
-    <span className="eyebrow">02 / The systems lab</span>
+    <span className="eyebrow">03 / The systems lab</span>
     <h2>Inside the<br />
     <em>workflow.</em>
     </h2>

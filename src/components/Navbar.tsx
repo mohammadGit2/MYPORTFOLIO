@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { sound } from '../utils/audio';
 import { useDialog } from '../hooks/useDialog';
 import { EMAIL, GITHUB } from '../data/portfolioData';
-const links = [{ id: 'projects', label: 'Work' }, { id: 'ai-agents', label: 'Lab' }, { id: 'architecture', label: 'Approach' }, { id: 'resume', label: 'Résumé' }, { id: 'contact', label: 'Contact' }];
+const links = [{ id: 'featured', label: 'Systems' }, { id: 'projects', label: 'Projects' }, { id: 'ai-agents', label: 'Playground' }, { id: 'testimonials', label: 'Testimonials' }, { id: 'contact', label: 'Let’s talk ↗' }];
 function MobileMenu({ onClose }: {
     onClose: () => void;
 }) {
@@ -51,9 +51,9 @@ export function Navbar() {
     }, []);
     return <>
     <header className="site-header">
-    <a className="wordmark" href="#home" aria-label="Syed Muhammad Bin Ali, back to top">s<span className="wordmark-dot">.</span>
+    <a className="wordmark" href="#home" aria-label="Syed Muhammad Bin Ali, back to top"><span className="wordmark-dot">{'<'}</span>s<span className="wordmark-dot">{'/>'}</span>
     </a>
-    <span className="header-caption">Independent developer<br />Interfaces & intelligent systems</span>
+    <span className="header-caption">SYED.<br />Developer & automation engineer</span>
     <nav className="desktop-nav" aria-label="Primary">{links.map(link => <a key={link.id} href={`#${link.id}`} aria-current={active === link.id ? 'location' : undefined}>{link.label}<span className="nav-dot"/>
         </a>)}</nav>
     <button className="sound-control" onClick={() => setSoundOn(sound.toggle())} aria-pressed={soundOn} aria-label={`Interface sound ${soundOn ? 'on' : 'off'}`}>

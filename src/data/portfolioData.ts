@@ -7,7 +7,7 @@ import small2 from '../assets/images/project_cognitive_mindgames_1790138540960-6
 import image3 from '../assets/images/project_historical_archive_1790138557253-1376.webp';
 import small3 from '../assets/images/project_historical_archive_1790138557253-640.webp';
 
-export const EMAIL = 'mohammadprofessional14@gmail.com';
+export const EMAIL = 'syedmohammadbinali@gmail.com';
 export const GITHUB = 'https://github.com/mohammadGit2';
 export interface Project {
  id: string; number: string; title: string; tagline: string; category: string;

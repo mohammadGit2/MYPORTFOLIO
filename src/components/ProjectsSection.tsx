@@ -11,11 +11,11 @@ export function ProjectsSection() {
     function open(project: Project) { sound.playClick(); setSelected(project); }
     return <section id="projects" className="work section" tabIndex={-1} aria-labelledby="work-title">
     <div className="section-heading">
-    <span className="eyebrow">01 / Selected work</span>
-    <h2 id="work-title">Different problems.<br />
-    <span className="muted">Same curiosity.</span>
+    <span className="eyebrow">02 / Selected projects</span>
+    <h2 id="work-title">Interfaces with<br />
+    <span className="muted">engineering behind them.</span>
     </h2>
-    <p>A collection of products, experiments, and interfaces. Open a project to look closer.</p>
+    <p>Explore the product, the implementation, and the decisions behind each build.</p>
     </div>
     <div className="filter-bar">
     <div className="filters" aria-label="Filter projects">{categories.map(cat => <button key={cat} aria-pressed={category === cat} onClick={() => setCategory(cat)}>{cat}</button>)}</div>

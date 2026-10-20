@@ -7,7 +7,7 @@ const capabilities = [
 export function ExpertiseSection() {
     return <section id="architecture" className="approach section" tabIndex={-1} aria-labelledby="approach-title">
     <div className="approach-intro">
-    <span className="eyebrow">03 / How I approach the work</span>
+    <span className="eyebrow">04 / How I approach the work</span>
     <h2 id="approach-title">The interface<br />is just the<br />
     <em>beginning.</em>
     </h2>

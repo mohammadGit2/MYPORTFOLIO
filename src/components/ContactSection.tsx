@@ -17,7 +17,7 @@ export function ContactSection() {
     }
     return <section id="contact" className="contact section" tabIndex={-1} aria-labelledby="contact-title">
     <div className="contact-meta">
-    <span className="eyebrow">05 / Start a conversation</span>
+    <span className="eyebrow">06 / Start a conversation</span>
     <span>From an idea to something useful.</span>
     </div>
     <h2 id="contact-title">Something<br />worth <em>building?</em>

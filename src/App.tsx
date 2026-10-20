@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import { Navbar } from './components/Navbar';
-import { Showreel } from './components/Showreel';
+import { FeaturedSystems } from './components/FeaturedSystems';
+import { Testimonials } from './components/Testimonials';
 import { ResumeSection } from './components/ResumeSection';
 import { Hero } from './components/Hero';
 import { ProjectsSection } from './components/ProjectsSection';
@@ -44,10 +45,11 @@ export default function App() {
     <Navbar />
     <main id="main" tabIndex={-1}>
     <Hero />
+    <FeaturedSystems />
     <ProjectsSection />
-    <Showreel />
     <AgentLab />
     <ExpertiseSection />
+    <Testimonials />
     <ResumeSection />
     <ContactSection />
     </main>

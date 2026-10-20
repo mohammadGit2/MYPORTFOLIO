@@ -9,4 +9,4 @@ createRoot(document.getElementById('root')!).render(
   </StrictMode>,
 );
 
-import './astra.css';
+import './developer.css';

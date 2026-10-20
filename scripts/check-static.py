@@ -13,7 +13,7 @@ checks['six_original_projects']=len([a for t,a in tags if t=='article' and 'proj
 checks['one_h1']=len([a for t,a in tags if t=='h1'])==1
 v=next(a for t,a in tags if t=='video');checks['film_is_opt_in_and_muted']='src' not in v and 'muted' in v and v.get('preload')=='none' and 'autoplay' not in v
 checks['film_captions_exist']=(p/'public/media/astra-film.vtt').exists()
-checks['standalone_resume_has_profile_and_contacts']='Syed Muhammad Bin Ali' in (p/'public/resume.html').read_text() and 'mailto:mohammadprofessional14@gmail.com' in (p/'public/resume.html').read_text()
+checks['standalone_resume_has_profile_and_contacts']='Syed Muhammad Bin Ali' in (p/'public/resume.html').read_text() and 'mailto:syedmohammadbinali@gmail.com' in (p/'public/resume.html').read_text()
 urls=[a.get('src') or a.get('poster') for t,a in tags if (t in ['img','track'] and 'src' in a) or(t=='video' and 'poster' in a)]
 checks['local_dist_assets_exist']=all((p/'dist'/url.lstrip('/')).exists() for url in urls if url.startswith('/'))
 info=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration,size','-show_entries','stream=codec_name,width,height,r_frame_rate,channels','-of','json','public/media/astra-film.mp4']))
